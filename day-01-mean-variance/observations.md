@@ -5,11 +5,13 @@ Also introduced outliers to observe their effect on distribution.
 - Datasets with the same mean can have very different distributions depending on variance.
 - Low variance data is tightly clustered around the mean.
 - High variance data is more spread out and less predictable.
+- Higher spread increases uncertainty in the data.
 ## Effect of Outliers
 - Adding a few extreme values increased the overall spread of the data.
 - The histogram scale adjusted to include outliers, making normal data appear compressed.
-- Mean and variance both increased due to outliers.
-- The distribution appeared visually distorted even though most data remained unchanged.
+- The distribution looked visually distorted even though most values remained similar.
+- Mean did not change significantly in this case because the dataset size was large compared to the number of outliers.
+- Variance increased noticeably, showing higher sensitivity to extreme values.
 ## ML Insight
 - Outliers can significantly affect model performance.
 - Models like linear regression are sensitive to extreme values.
